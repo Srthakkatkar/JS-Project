@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shree Balaji Motor Training School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<img src="photos/balaji-banner.jpg" class="main-banner">
+
+<div class="card-container">
+    <div class="card">
+        <img src="photos/car1.jpg">
+        <p>Alto</p>
+    </div>
+
+    <div class="card">
+        <img src="photos/car2.jpg">
+        <p>D-Zire</p>
+    </div>
+
+    <div class="card">
+        <img src="photos/car3.jpg">
+        <p>Wagon-R</p>
+    </div>
+
+    <div class="card">
+        <img src="photos/car4.jpg">
+        <p>Ritz</p>
+    </div>
+</div>
+
+    <h3>Student Registration</h3>
+
+    <input type="text" id="name" placeholder="Enter Student Name">
+    <button onclick="addStudent()">Add Student</button>
+    <p>Total Students: <span id="total">0</span></p>
+
+    <table>
+    <tr>
+        <th>Student Name</th>
+        <th>Action</th>
+    </tr>
+
+    <tbody id="studentList"></tbody>
+
+</table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
