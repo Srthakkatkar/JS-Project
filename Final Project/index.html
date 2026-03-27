@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Balaji Pro-Driver Tracker | Ichalkaranji</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <div id="safety-banner">
+            <strong>Road Safety Tip:</strong> <span id="apiAdvice">Loading tip...</span>
+            </div>
+            <h1>Shree Balaji Training Log</h1>
+            <p>Mastering the roads of Ichalkaranji</p>
+        </header>
+
+        <section class="stats-cards">
+            <div class="card">
+                <h3>Total Sessions</h3>
+                <p id="totalSessions">0</p>
+            </div>
+            <div class="card">
+                <h3>Total Minutes</h3>
+                <p id="totalMinutes">0</p>
+            </div>
+        </section>
+
+        <form id="logForm">
+            <input type="date" id="logDate" required>
+            
+            <select id="logSkill" required>
+                <option value="" disabled selected>Select Skill</option>
+                <option value="Steering Control">Steering Control</option>
+                <option value="Clutch & Brake">Clutch & Brake</option>
+                <option value="Gear Shifting">Gear Shifting</option>
+                <option value="Reverse Driving">Reverse Driving</option>
+                <option value="Left-Right Turns">Left-Right Turns</option>
+                <option value="Parallel Parking">Parallel Parking</option>
+                <option value="Slope/Hills Start">Slope/Hills Start</option>
+                <option value="Traffic Navigation">Traffic Navigation</option>
+                <option value="Engine Basics">Engine Training</option>
+                <option value="Emergency Braking">Emergency Braking</option>
+            </select>
+
+            <select id="logDuration" required>
+                <option value="" disabled selected>Duration</option>
+                <option value="30">30 Minutes</option>
+                <option value="60">60 Minutes</option>
+            </select>
+
+            <button type="submit">Log Session</button>
+        </form>
+
+        <table id="logTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Skill Practiced</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody id="logBody"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
